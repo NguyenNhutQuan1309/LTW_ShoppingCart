@@ -1,0 +1,131 @@
+/* General */
+body {
+    margin: 16px 28px;
+    padding: 0;
+    color: black;
+    background: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+/* Heading */
+h1 {
+    margin: 0 0 10px;
+    color: #008080;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+/* Table */
+table {
+    width: auto;
+    border-collapse: collapse;
+    margin-bottom: 14px;
+}
+
+th, td {
+    border: 1px solid #333;
+    padding: 5px 6px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+th {
+    font-weight: bold;
+}
+
+/* Description column width */
+tr > :first-child:nth-last-child(3) {
+    min-width: 325px;
+}
+
+tr > :nth-child(2):nth-last-child(4) {
+    min-width: 260px;
+}
+
+/* Product list */
+.price-column {
+    width: 65px;
+    text-align: right;
+    white-space: nowrap;
+}
+
+.add-column {
+    text-align: left;
+    white-space: nowrap;
+}
+
+/* Form */
+form {
+    margin: 0;
+}
+
+/* Button */
+button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    padding: 2px 7px;
+    cursor: pointer;
+}
+
+/* Quantity */
+.quantity-form {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    white-space: nowrap;
+}
+
+.quantity-input {
+    width: 28px;
+    height: 18px;
+    padding: 1px 3px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    -moz-appearance: textfield;
+}
+
+.quantity-input::-webkit-inner-spin-button,
+.quantity-input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Cart buttons */
+.cart-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    margin-top: 12px;
+}
+
+/* Error */
+.error {
+    color: #b00020;
+}
+
+/* Responsive */
+@media (max-width: 650px) {
+
+    body {
+        margin: 8px 12px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 5px 3px;
+    }
+
+    tr > :first-child:nth-last-child(3),
+    tr > :nth-child(2):nth-last-child(4) {
+        min-width: auto;
+    }
+
+    .quantity-form {
+        flex-wrap: wrap;
+    }
+}

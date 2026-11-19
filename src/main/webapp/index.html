@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CD list</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<h1>CD list</h1>
+<table>
+    <thead>
+    <tr>
+        <th>Description</th>
+        <th class="price-column">Price</th>
+        <th class="add-column"></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>86 (the band) - True Life Songs and Pictures</td>
+        <td class="price-column">$14.95</td>
+        <td class="add-column">
+            <form action="cart" method="post">
+                <input type="hidden" name="action" value="add">
+                <input type="hidden" name="productId" value="CD01">
+                <button type="submit">Add To Cart</button>
+            </form>
+        </td>
+    </tr>
+    <tr>
+        <td>Paddlefoot - The first CD</td>
+        <td class="price-column">$12.95</td>
+        <td class="add-column">
+            <form action="cart" method="post">
+                <input type="hidden" name="action" value="add">
+                <input type="hidden" name="productId" value="CD02">
+                <button type="submit">Add To Cart</button>
+            </form>
+        </td>
+    </tr>
+    <tr>
+        <td>Paddlefoot - The second CD</td>
+        <td class="price-column">$14.95</td>
+        <td class="add-column">
+            <form action="cart" method="post">
+                <input type="hidden" name="action" value="add">
+                <input type="hidden" name="productId" value="CD03">
+                <button type="submit">Add To Cart</button>
+            </form>
+        </td>
+    </tr>
+    <tr>
+        <td>Joe Rut - Genuine Wood Grained Finish</td>
+        <td class="price-column">$14.95</td>
+        <td class="add-column">
+            <form action="cart" method="post">
+                <input type="hidden" name="action" value="add">
+                <input type="hidden" name="productId" value="CD04">
+                <button type="submit">Add To Cart</button>
+            </form>
+        </td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
